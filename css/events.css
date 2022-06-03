@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.main-cont{
+    padding: 2rem;
+    margin-top: 80px;
+    min-height: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    display: flex;
+}
+#page-ref li{
+    color: white;
+}
+#page-ref .line{
+    visibility: visible;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+/******************************************************************************/
+.event-cont{
+    display: flex;
+    box-shadow: rgb(175, 38, 255) 0px 20px 30px -10px;
+    width: 40%;
+    height: 500px;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    margin: 1rem 0;
+}
+.img-cont{
+    display: flex;
+    height: 100%;
+    width: 40%;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem 0 0 2rem;
+}
+.img-cont img{
+    height:auto;
+    width: 100%; 
+}
+.text-cont{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+.enroll-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.tick-cont{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.tick-cont svg{
+    width: auto;
+    height: 50px;
+}
+.wrapper{
+    margin-left: 2rem;
+}
+
+.event-date-cont h2{
+    margin: 0;
+   
+}
+.event-des{
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: 1rem;
+    
+}
+.event-date-cont .date-cont{
+    font-size: 1.5rem;
+    
+}
+.button-cont{
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+.button-cont a{
+    color: aqua;
+    
+}
+.tick-cont svg{
+    color: greenyellow;
+}
+.tick-cont .load-icon{
+    /* color:white; */
+}
+@media (max-width:1089px){
+    .event-cont{
+        flex-direction: column;
+        height: fit-content !important;
+    }
+    .event-cont{
+        height: 1000px;
+    }
+    .img-cont{
+        width: 100%;
+        border-radius: 2rem 2rem 0 0;
+    }
+    .img-cont img{
+        border-radius: 2rem 2rem 0 0;
+    }
+    .text-cont{
+        width: fit-content;
+    }
+    .enroll-cont{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .main-cont{
+        height: fit-content;
+    }
+    .date-cont{
+        margin: 0.5rem 0;
+    }
+    .wrapper{
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .button-cont{
+        margin: 0;
+        text-align: center;
+    }
+}
